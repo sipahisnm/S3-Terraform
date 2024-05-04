@@ -125,7 +125,7 @@ case "aws_instance" automatically tells Terraform that it is managed by the "aws
              bucket = aws_s3_bucket.example.id
              source = "sinem.txt"
              content_type  = "text/html"
-             #acl = "public-read" # if we want to make read permission only for some objetc in the bucket we can use inline acl
+             #acl = "public-read" # If we want to make read permission only for some objects in the bucket we can use inline acl
 
             }
         ```    
@@ -140,7 +140,7 @@ case "aws_instance" automatically tells Terraform that it is managed by the "aws
  ```
  terraform apply
  ```
- - In the terminal you will see the endpoint for bucket and object you can run this comment to see the file
+ - In the terminal, you will see the endpoint for bucket and object you can run this comment to see the file
  ```
  curl example-sinem.s3.amazonaws.com/sinem.txt
  ```
